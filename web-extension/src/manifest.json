@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Save Later",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "Save Later"
+  },
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": []
+}
